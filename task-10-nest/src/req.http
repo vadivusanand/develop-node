@@ -1,0 +1,39 @@
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "email": "kavitha@gmail.com",
+    "passWord": "kavi@123"
+}
+
+
+###
+
+POST http://localhost:3000/api/user/register
+content-type: application/json
+
+# {
+#     "username":"Kavitha",
+#     "password":"kavi@09",
+#     "email":"kavitha@gmail.com" 
+# }
+
+###
+
+POST http://localhost:3000/api/user/forgotpassword
+content-type: application/json
+
+{
+    "username": "Kavitha",
+    "email": "kavitha@gmail.com",
+    "resetpassword":"kavi@090287"
+}
+
+###
+POST http://localhost:3000/profile
+content-type: application/json
+
+{
+    "username":"Kavitha",
+    "password":"kavi@090287"
+}
